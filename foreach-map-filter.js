@@ -40,13 +40,15 @@ Examples:
     showFirstAndLast(['hi', 'goodbye', 'smile']) // ['hi', 'ge', 'se']
 
 */
-function showFirstAndLast(arr){
+
+
+function showFirstAndLast(arr) {
     let newArr = [];
-    arr.forEach(function(char){
-        newArr.push(val[0], val[val.length-1])
+    arr.forEach(function(val) {
+      newArr.push(val[0] + val[val.length - 1]);
     });
     return newArr;
-}
+  }
 
 /*
 Write a function called addKeyAndValue which accepts an array of objects, a key, and a value and returns the array passed to the function with the new key and value added for each object 
@@ -126,7 +128,7 @@ Examples:
 */
 
 function extractKey(arr, key){
-    return map.arr(function(val) {
+    return arr.map(function(val) {
         return val[key];
     });
 }
